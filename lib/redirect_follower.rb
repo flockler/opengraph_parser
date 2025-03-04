@@ -41,7 +41,7 @@ class RedirectFollower
 
       next unless meta_url.present?
 
-      meta_uri = URI.parse(URI.escape(meta_url))
+      meta_uri = Addressable::URI.parse(meta_url)
 
       meta_redirect_url += "#{uri.scheme}://" unless meta_uri.scheme
       meta_redirect_url += "#{uri.host}:#{uri.port}" unless meta_uri.host
