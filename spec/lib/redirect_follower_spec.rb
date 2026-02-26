@@ -26,7 +26,7 @@ describe RedirectFollower do
 
       describe "and uri scheme is HTTPS" do
         it "should use https method to retrieve the uri" do
-          uri = Addressable::URI.parse(url)
+          uri = Addressable::URI.parse(https_url)
 
           https = Net::HTTP.new(uri.host, uri.inferred_port)
           Net::HTTP.should_receive(:new).with(uri.host, uri.inferred_port).and_return(https)

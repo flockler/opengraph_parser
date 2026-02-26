@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source "https://rubygems.org"
 # Add dependencies required to use your gem here.
 # Example:
 #   gem "activesupport", ">= 2.3.5"
@@ -11,5 +11,5 @@ group :development do
   gem "bundler"
 end
 
-gem "nokogiri"
-gem "addressable"
+gem "nokogiri", "~> 1.19"
+gem "addressable", "~> 2.8"
