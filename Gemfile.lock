@@ -39,9 +39,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  addressable
+  addressable (~> 2.8)
   bundler
-  nokogiri
+  nokogiri (~> 1.19)
   rdoc
   rspec
 
